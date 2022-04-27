@@ -1,7 +1,13 @@
 ## 简介
 适配于 HLK 7628 模组 安灯和PTL项目的openwrt系统
 
-
+## 我的修改
+### 系统基础信息
+0. 板卡选择HLK7628，选择一堆驱动，包括串口、usb等
+1. 根据原理图修改dts文件,释放gpio
+2. 修改默认root用户带密码，密码为：`hqkstbl888`,对应文件为`package/base-files/files/etc/shadow`
+3. 修改默认hostname、ip、时区 对应文件为：`package/base-files/files/bin/config_generate`
+4. 关闭xrusb驱动的的内核输出
 
 
 
