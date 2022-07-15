@@ -71,10 +71,6 @@
 
 &i2c {
 	status = "okay";
-	rtc@51 {
-		compatible = "nxp,pcf8563";
-		reg = <0x51>;
-	};
 };
 
 &spi0 {
