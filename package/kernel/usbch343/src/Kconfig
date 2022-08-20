@@ -1,0 +1,6 @@
+config USBCH343 
+	tristate "ch343 usb serial driver"
+    default "n"
+    help
+        It is ch343 usb serial driver driver
+
