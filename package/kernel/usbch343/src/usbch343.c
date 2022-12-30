@@ -289,9 +289,7 @@ static int ch343_configure(struct ch343 *ch343)
 			goto out;
 	}
 
-	dev_info(&ch343->data->dev,
-		"%s - chip hver : 0x%2x, sver : 0x%2x, chip : %d\n",
-		__func__, buffer[0], buffer[1], ch343->chiptype);
+	//dev_info(&ch343->data->dev,"%s - chip hver : 0x%2x, sver : 0x%2x, chip : %d\n",__func__, buffer[0], buffer[1], ch343->chiptype);
 out:
     kfree(buffer);
 	return r < 0 ? r : 0;
